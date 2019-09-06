@@ -1,6 +1,6 @@
 {
   "name": "better-file-downloads",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "main": "dist/index.js",
   "module": "dist/downloader.esm.js",
   "typings": "dist/index.d.ts",
@@ -8,6 +8,16 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "react",
+    "typescript",
+    "file",
+    "download"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylerzey/better-file-downloader.git"
+  },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
