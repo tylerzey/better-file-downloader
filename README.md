@@ -1,8 +1,8 @@
 # Downloader
 
-[![Blazing Fast](https://badgen.now.sh/badge/speed/blazing%20%F0%9F%94%A5/green)](https://www.npmjs.com/package/better-file-downloads) [![Blazing Fast](https://badgen.now.sh/badge/speed/blazing%20%F0%9F%94%A5/green)](https://www.npmjs.com/package/better-file-downloads) [![Blazing Fast](https://badgen.now.sh/badge/speed/blazing%20%F0%9F%94%A5/green)](https://www.npmjs.com/package/better-file-downloads)
-
 This project downloads files in the browser. It works in IE. And supports promises.
+
+[![Blazing Fast](https://badgen.now.sh/badge/speed/blazing%20%F0%9F%94%A5/green)](https://www.npmjs.com/package/better-file-downloads) [![Blazing Fast](https://badgen.now.sh/badge/speed/blazing%20%F0%9F%94%A5/green)](https://www.npmjs.com/package/better-file-downloads) [![Blazing Fast](https://badgen.now.sh/badge/speed/blazing%20%F0%9F%94%A5/green)](https://www.npmjs.com/package/better-file-downloads)
 
 The api is dead simple. You pass in a file url or a blob. And the function downloads a file to the users browser.
 
@@ -38,15 +38,15 @@ await downlodownloadABlobadAUrl(yourBlob, {
 ```
 
 ```js
-import React from "react";
-import { downloadAUrl } from "better-file-downloads";
+import React from 'react';
+import { downloadAUrl } from 'better-file-downloads';
 
 export default function example() {
   const download = async url => {
     await downloadAUrl(url, {
-      fileName: "example-file",
-      extension: ".pdf",
-      contentType: "application/pdf"
+      fileName: 'example-file',
+      extension: '.pdf',
+      contentType: 'application/pdf',
     });
   };
 
@@ -54,7 +54,7 @@ export default function example() {
     <button
       type="button"
       onClick={() =>
-        download("https://s3.amazonaws.com/my-uploaded-files/images/cat.jpg")
+        download('https://s3.amazonaws.com/my-uploaded-files/images/cat.jpg')
       }
     >
       Download an image!
