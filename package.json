@@ -2,7 +2,7 @@
   "name": "better-file-downloads",
   "version": "1.0.3",
   "main": "dist/index.js",
-  "module": "dist/downloader.esm.js",
+  "module": "dist/better-file-downloader.esm.js",
   "typings": "dist/index.d.ts",
   "license": "MIT",
   "files": [
