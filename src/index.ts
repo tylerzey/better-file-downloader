@@ -5,13 +5,16 @@ type FileData = {
 };
 
 const download = (blob: Blob | Uint8Array, fileInfo: FileData): void => {
+  // @ts-ignore msSaveBlob
   if (typeof window.navigator.msSaveOrOpenBlob === 'function') {
+    // @ts-ignore msSaveBlob
     window.navigator.msSaveBlob(
       blob,
       `${fileInfo.fileName}${fileInfo.extension}`
     );
   } else {
     const a = window.document.createElement('a');
+    // @ts-ignore msSaveBlob
     a.href = window.URL.createObjectURL(blob);
     a.download = `${fileInfo.fileName}${fileInfo.extension}`;
     window.document.body.appendChild(a);
