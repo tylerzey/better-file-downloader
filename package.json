@@ -1,6 +1,6 @@
 {
   "name": "better-file-downloader",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "dist/index.js",
   "module": "dist/better-file-downloader.esm.js",
   "typings": "dist/index.d.ts",
