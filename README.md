@@ -17,8 +17,8 @@ The library works with react and is fairly lightweight in size.
 ### Examples
 
 ```js
-import { downloadAUrl } from 'better-file-downloads';
-const { downloadAUrl } = require('better-file-downloads');
+import { downloadAUrl } from 'better-file-downloader';
+const { downloadAUrl } = require('better-file-downloader');
 
 await downloadAUrl(
   'https://s3.amazonaws.com/my-uploaded-files/images/cat.jpg',
@@ -33,8 +33,8 @@ await downloadAUrl(
 Or if you prefer to pass in a blob.
 
 ```js
-import { downloadABlob } from 'better-file-downloads';
-const { downloadABlob } = require('better-file-downloads');
+import { downloadABlob } from 'better-file-downloader';
+const { downloadABlob } = require('better-file-downloader');
 
 await downloadABlob(yourBlob, {
   fileName: 'my-new-file',
@@ -45,7 +45,7 @@ await downloadABlob(yourBlob, {
 
 ```js
 import React from 'react';
-import { downloadAUrl } from 'better-file-downloads';
+import { downloadAUrl } from 'better-file-downloader';
 
 export default function example() {
   const download = async url => {
