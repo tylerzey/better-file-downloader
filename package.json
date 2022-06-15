@@ -37,7 +37,7 @@
     "trailingComma": "es5"
   },
   "devDependencies": {
-    "@types/jest": "27.4.1",
+    "@types/jest": "27.5.2",
     "husky": "7.0.4",
     "tsdx": "0.14.1",
     "tslib": "2.3.1",
