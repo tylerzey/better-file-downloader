@@ -8,6 +8,12 @@ The api is dead simple. You pass in a file url or a blob. And the function downl
 
 The library works with react and is fairly lightweight in size.
 
+### Install 
+
+```bash
+  npm install better-file-downloader
+```
+
 ### Examples
 
 ```js
@@ -30,7 +36,7 @@ Or if you prefer to pass in a blob.
 import { downloadABlob } from 'better-file-downloads';
 const { downloadABlob } = require('better-file-downloads');
 
-await downlodownloadABlobadAUrl(yourBlob, {
+await downloadABlob(yourBlob, {
   fileName: 'my-new-file',
   extension: '.pdf',
   contentType: 'application/pdf',
