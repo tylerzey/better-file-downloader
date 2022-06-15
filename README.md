@@ -8,11 +8,17 @@ The api is dead simple. You pass in a file url or a blob. And the function downl
 
 The library works with react and is fairly lightweight in size.
 
+### Install 
+
+```bash
+  npm install better-file-downloader
+```
+
 ### Examples
 
 ```js
-import { downloadAUrl } from 'better-file-downloads';
-const { downloadAUrl } = require('better-file-downloads');
+import { downloadAUrl } from 'better-file-downloader';
+const { downloadAUrl } = require('better-file-downloader');
 
 await downloadAUrl(
   'https://s3.amazonaws.com/my-uploaded-files/images/cat.jpg',
@@ -27,10 +33,10 @@ await downloadAUrl(
 Or if you prefer to pass in a blob.
 
 ```js
-import { downloadABlob } from 'better-file-downloads';
-const { downloadABlob } = require('better-file-downloads');
+import { downloadABlob } from 'better-file-downloader';
+const { downloadABlob } = require('better-file-downloader');
 
-await downlodownloadABlobadAUrl(yourBlob, {
+await downloadABlob(yourBlob, {
   fileName: 'my-new-file',
   extension: '.pdf',
   contentType: 'application/pdf',
@@ -39,7 +45,7 @@ await downlodownloadABlobadAUrl(yourBlob, {
 
 ```js
 import React from 'react';
-import { downloadAUrl } from 'better-file-downloads';
+import { downloadAUrl } from 'better-file-downloader';
 
 export default function example() {
   const download = async url => {
