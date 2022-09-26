@@ -1,7 +1,8 @@
 import { downloadABlob } from '../src';
+import { describe, afterAll, it, expect, vi } from 'vitest';
 
-const createElement = jest.spyOn(document, 'createElement');
-const createObjectURL = jest.fn().mockImplementation(o => o);
+const createElement = vi.spyOn(document, 'createElement');
+const createObjectURL = vi.fn().mockImplementation((o) => o);
 window.URL.createObjectURL = createObjectURL;
 
 describe('download', () => {
@@ -11,7 +12,7 @@ describe('download', () => {
   });
 
   it('downloadABlob', () => {
-    const testBlob = new Blob(['test']);
+    const testBlob = new Blob(['test'], { type: 'image/png' });
 
     downloadABlob(testBlob, {
       fileName: '',

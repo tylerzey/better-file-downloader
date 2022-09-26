@@ -1,12 +1,11 @@
 {
-    "extends": ["config:base"],
-    "baseBranches": ["master"],
-    "schedule": ["after 9pm on sunday"],
-    "packageRules": [
-      {
-        "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-        "automerge": true
-      }
-    ]
-  }
-  
+  "extends": ["config:base"],
+  "baseBranches": ["master"],
+  "schedule": ["after 9pm on sunday"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
+}

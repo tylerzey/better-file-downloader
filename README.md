@@ -8,7 +8,7 @@ The api is dead simple. You pass in a file url or a blob. And the function downl
 
 The library works with react and is fairly lightweight in size.
 
-### Install 
+### Install
 
 ```bash
   npm install better-file-downloader
@@ -48,7 +48,7 @@ import React from 'react';
 import { downloadAUrl } from 'better-file-downloader';
 
 export default function example() {
-  const download = async url => {
+  const download = async (url) => {
     await downloadAUrl(url, {
       fileName: 'example-file',
       extension: '.pdf',
