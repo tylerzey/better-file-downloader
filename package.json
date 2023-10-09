@@ -30,7 +30,7 @@
     "trailingComma": "es5"
   },
   "devDependencies": {
-    "happy-dom": "7.7.0",
+    "happy-dom": "12.9.1",
     "prettier": "2.7.1",
     "tslib": "2.4.1",
     "tsup": "6.5.0",
