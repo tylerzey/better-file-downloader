@@ -32,7 +32,7 @@
   "devDependencies": {
     "happy-dom": "12.9.1",
     "prettier": "3.0.3",
-    "tslib": "2.6.2",
+    "tslib": "2.8.0",
     "tsup": "7.2.0",
     "typescript": "5.2.2",
     "vitest": "0.34.6"
