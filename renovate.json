@@ -1,5 +1,5 @@
 {
-  "extends": ["config:base"],
+  "extends": ["config:recommended"],
   "baseBranches": ["main"],
   "schedule": ["after 9pm on sunday"],
   "packageRules": [
